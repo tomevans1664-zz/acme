@@ -1,0 +1,26 @@
+{
+  "products": {
+    "FR1": {
+      "name": "Fruit tea",
+      "price": 3.11
+    },
+    "SR1": {
+      "name": "Strawberries",
+      "price": 5
+    },
+    "CF1": {
+      "name": "Coffee",
+      "price": 11.23
+    }
+  },
+  "specials": {
+    "FR1": {
+      "key": "BOGOF"
+    },
+    "SR1": {
+      "key": "BULK",
+      "quantity": 3,
+      "price": 4.5
+    }
+  }
+}

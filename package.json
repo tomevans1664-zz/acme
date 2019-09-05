@@ -1,0 +1,23 @@
+{
+  "name": "acme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomevans1664/acme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomevans1664/acme/issues"
+  },
+  "homepage": "https://github.com/tomevans1664/acme#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
