@@ -1,3 +1,5 @@
+const specials = require('./specials.js');
+
 module.exports = class Basket {
     constructor(pricingRules) {
         this.pricingRules = pricingRules;
@@ -17,19 +19,10 @@ module.exports = class Basket {
                 let itemTotal = 0;
                 switch (special.key) {
                     case 'BOGOF':
-                        const isEven = basketCount % 2 === 0;
-                        itemTotal = isEven ? (
-                            basketCount / 2 * price
-                        ) : (
-                            ((basketCount - 1) / 2 * price) + price
-                        );
+                        itemTotal += specials.bogof(basketCount, price);
                         break;
                     case 'BULK':
-                        itemTotal = basketCount >= special.quantity ? (
-                            basketCount * special.price
-                        ) : (
-                            basketCount * price
-                        );
+                        itemTotal = specials.bulk(basketCount, price, special);
                         break;
                     default:
                         break;
